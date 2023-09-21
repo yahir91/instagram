@@ -50,6 +50,8 @@ gem 'htmlbeautifier'
 
 gem 'devise'
 
+gem "font-awesome-sass", "~> 6.1.2"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

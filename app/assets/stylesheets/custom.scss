@@ -49,3 +49,7 @@ html {
     height: auto;
     margin-right: .5rem
   }
+
+  .card::-webkit-scrollbar{
+    width: 0;
+  }

@@ -9,6 +9,9 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
+    <% if current_user %>
+      <%= render "layouts/navbar" %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
