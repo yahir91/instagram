@@ -9,7 +9,10 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-  <%= render "layouts/navbar" %>
+    <%= render "layouts/navbar" %>
+    <div class="d-flex align-items-center justify-content-center mt-4">
+      <%= render "story/stories_list"%>
+    </div>
     <%= yield %>
   </body>
 </html>
