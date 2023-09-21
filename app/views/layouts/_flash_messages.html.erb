@@ -1,6 +1,14 @@
-<% if notice%>
+<% if notice && notice.is_a?(Arrray)%>
+  <% notice.each do |n|%>
+    <p class="alert alert-success"><%=n%></p>
+  <% end %>
+<% elsif notice && notice.is_a?(String) %>
   <p class="alert alert-success"><%=notice%></p>
 <% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%alert%></p>
+<% if alert && alert.is_a?(Array) %>
+  <% alert.each do |a| %>
+    <p class="alert alert-danger"><%=a%></p>
+  <% end %>
+<% elsif alert && alert.isa_a?(String) %>
+  <p class="alert alert-danger"><%=alert%></p>
 <% end %>

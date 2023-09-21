@@ -2,6 +2,10 @@ import * as FilePond from "filepond";
 import FilePondPluginImagePreview from "filepond-plugin-image-preview";
 import FilepondPluginFileValidateType from "filepond-plugin-file-validate-type";
 
+document.addEventListener("turbo:load", loadFilePond);
+
+
+function loadFilePond () {
 FilePond.registerPlugin(
   FilePondPluginImagePreview,
   FilepondPluginFileValidateType
@@ -18,3 +22,4 @@ const pond = FilePond.create(inputElement, {
   allowReorder: true,
   acceptedFileTypes: ["image/*"],
 });
+}
