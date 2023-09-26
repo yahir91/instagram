@@ -8,5 +8,7 @@ class User < ApplicationRecord
 
   has_many :likes
 
+  has_many :comments
+
   has_one_attached :profile_pic
 end
